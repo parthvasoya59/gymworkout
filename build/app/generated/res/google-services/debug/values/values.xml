@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">15853566470-7r7n5k0u3mef114lgmn2dqnkm8k5koql.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">15853566470</string>
+    <string name="google_api_key" translatable="false">AIzaSyAAPxj9lzw-onTiPMudfq5xzbF_bYgMtpA</string>
+    <string name="google_app_id" translatable="false">1:15853566470:android:c72dbae7db4786f8b16187</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAAPxj9lzw-onTiPMudfq5xzbF_bYgMtpA</string>
+    <string name="google_storage_bucket" translatable="false">gymworkout-98877.appspot.com</string>
+    <string name="project_id" translatable="false">gymworkout-98877</string>
+</resources>
