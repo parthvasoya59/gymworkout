@@ -4,7 +4,7 @@
             "outputFile": "com.example.gymworkout.app-mergeDebugResources-15:/values-hy/values-hy.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\parth\\.gradle\\caches\\transforms-3\\fb1cdd9a5f4071aefa9516412ccd4551\\transformed\\jetified-play-services-base-18.0.1\\res\\values-hy\\values.xml",
+                    "source": "/Users/zeelmalaviya/.gradle/caches/transforms-3/fb1cdd9a5f4071aefa9516412ccd4551/transformed/jetified-play-services-base-18.0.1/res/values-hy/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\parth\\.gradle\\caches\\transforms-3\\2cd8275d3a57fe2283eff0dcbb56ad7e\\transformed\\browser-1.4.0\\res\\values-hy\\values-hy.xml",
+                    "source": "/Users/zeelmalaviya/.gradle/caches/transforms-3/43a439c3955dc2bba6afdb453c7dbed1/transformed/core-1.6.0/res/values-hy/values-hy.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "24",
+                        "startColumns": "4",
+                        "startOffsets": "2791",
+                        "endColumns": "100",
+                        "endOffsets": "2887"
+                    }
+                },
+                {
+                    "source": "/Users/zeelmalaviya/.gradle/caches/transforms-3/2cd8275d3a57fe2283eff0dcbb56ad7e/transformed/browser-1.4.0/res/values-hy/values-hy.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\parth\\.gradle\\caches\\transforms-3\\10790e0618c918fd2d5d216ee001548f\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-hy\\values.xml",
+                    "source": "/Users/zeelmalaviya/.gradle/caches/transforms-3/10790e0618c918fd2d5d216ee001548f/transformed/jetified-play-services-basement-18.1.0/res/values-hy/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -52,23 +69,6 @@
                         "startOffsets": "1098",
                         "endColumns": "150",
                         "endOffsets": "1244"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\parth\\.gradle\\caches\\transforms-3\\43a439c3955dc2bba6afdb453c7dbed1\\transformed\\core-1.6.0\\res\\values-hy\\values-hy.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "24",
-                        "startColumns": "4",
-                        "startOffsets": "2791",
-                        "endColumns": "100",
-                        "endOffsets": "2887"
                     }
                 }
             ]

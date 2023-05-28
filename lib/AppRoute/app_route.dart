@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:gymworkout/Screen/area_screen/area_screen_view.dart';
 import 'package:gymworkout/Screen/height_screen/height_screen_view.dart';
+import 'package:gymworkout/Screen/weight_screen/weight_screen_view.dart';
 import '../Screen/gender_sel_screen/gender_sel_screen_view.dart';
 import '../allbindings.dart';
 
@@ -8,6 +9,7 @@ class AppRoutes {
   static String genderSelScreen = '/gender_sel_Screen';
   static String areaScreen = '/area_Screen';
   static String heightScreen = '/height_Screen';
+  static String weightScreen = '/weight_Screen';
 
   static List<GetPage> pages = [
     GetPage(
@@ -24,6 +26,11 @@ class AppRoutes {
       name: heightScreen,
       page: () => const HeightScreenWidget(),
       bindings: [HeightScreenBinding()],
+    ),
+    GetPage(
+      name: weightScreen,
+      page: () => const WeightScreenWidget(),
+      bindings: [WeightScreenBinding()],
     ),
   ];
 }

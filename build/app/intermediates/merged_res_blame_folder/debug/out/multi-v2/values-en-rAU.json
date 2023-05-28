@@ -4,7 +4,7 @@
             "outputFile": "com.example.gymworkout.app-mergeDebugResources-15:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\parth\\.gradle\\caches\\transforms-3\\2cd8275d3a57fe2283eff0dcbb56ad7e\\transformed\\browser-1.4.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "/Users/zeelmalaviya/.gradle/caches/transforms-3/2cd8275d3a57fe2283eff0dcbb56ad7e/transformed/browser-1.4.0/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\parth\\.gradle\\caches\\transforms-3\\43a439c3955dc2bba6afdb453c7dbed1\\transformed\\core-1.6.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "/Users/zeelmalaviya/.gradle/caches/transforms-3/43a439c3955dc2bba6afdb453c7dbed1/transformed/core-1.6.0/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

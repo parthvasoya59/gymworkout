@@ -4,7 +4,17 @@
             "outputFile": "com.example.gymworkout.app-mergeDebugResources-15:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\parth\\.gradle\\caches\\transforms-3\\43a439c3955dc2bba6afdb453c7dbed1\\transformed\\core-1.6.0\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "/Users/zeelmalaviya/.gradle/caches/transforms-3/2cd8275d3a57fe2283eff0dcbb56ad7e/transformed/browser-1.4.0/res/values-en-rIN/values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,153,250,359",
+                        "endColumns": "97,96,108,98",
+                        "endOffsets": "148,245,354,453"
+                    }
+                },
+                {
+                    "source": "/Users/zeelmalaviya/.gradle/caches/transforms-3/43a439c3955dc2bba6afdb453c7dbed1/transformed/core-1.6.0/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -18,16 +28,6 @@
                         "startOffsets": "458",
                         "endColumns": "100",
                         "endOffsets": "554"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\parth\\.gradle\\caches\\transforms-3\\2cd8275d3a57fe2283eff0dcbb56ad7e\\transformed\\browser-1.4.0\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,153,250,359",
-                        "endColumns": "97,96,108,98",
-                        "endOffsets": "148,245,354,453"
                     }
                 }
             ]
