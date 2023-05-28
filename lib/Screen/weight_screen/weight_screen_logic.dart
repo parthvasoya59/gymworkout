@@ -8,7 +8,7 @@ class WeightScreenLogic extends GetxController {
 
   RxDouble pointerValue = 45.0.obs;
   RxDouble minimumLevel = 0.0.obs;
-  RxDouble maximumLevel = 200.0.obs;
+  RxDouble maximumLevel = 2000.0.obs;
 
   onNextHightSelection() async {
     debugPrint('onNextHightSelection => pointerValue ${pointerValue.value}');
