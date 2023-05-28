@@ -1,7 +1,9 @@
 import 'package:get/get.dart';
+import 'package:gymworkout/Screen/bmi_screen/bmi_screen_logic.dart';
 
 import 'Screen/area_screen/area_screen_logic.dart';
 import 'Screen/gender_sel_screen/gender_sel_screen_logic.dart';
+import 'Screen/goal_screen/goal_screen_logic.dart';
 import 'Screen/height_screen/height_screen_logic.dart';
 import 'Screen/weight_screen/weight_screen_logic.dart';
 
@@ -25,9 +27,24 @@ class HeightScreenBinding extends Bindings {
     Get.lazyPut(() => HeightScreenLogic());
   }
 }
+
 class WeightScreenBinding extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut(() => WeightScreenLogic());
+  }
+}
+
+class BmiScreenBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut(() => BmiScreenLogic());
+  }
+}
+
+class GoalScreenBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut(() => GoalScreenLogic());
   }
 }

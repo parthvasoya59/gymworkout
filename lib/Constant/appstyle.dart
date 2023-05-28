@@ -57,7 +57,9 @@ class AppStyle {
   static TextStyle textStyleLatoBoldWhite25 = textStyleFamilyLatoBold.copyWith(fontSize: getFontSize(25),color: cWhite);
   static TextStyle textStyleLatoBoldWhite30 = textStyleFamilyLatoBold.copyWith(fontSize: getFontSize(30),color: cWhite);
   static TextStyle textStyleLatoBoldWhite35 = textStyleFamilyLatoBold.copyWith(fontSize: getFontSize(35),color: cWhite);
+  static TextStyle textStyleLatoBoldWhite60 = textStyleFamilyLatoBold.copyWith(fontSize: getFontSize(60),color: cWhite);
   static TextStyle textStyleLatoBoldBlack20 = textStyleFamilyLatoBold.copyWith(fontSize: getFontSize(20),color: cBlack);
+  static TextStyle textStyleLatoBoldGrey20 = textStyleFamilyLatoBold.copyWith(fontSize: getFontSize(20),color: cGrey);
 
   static TextStyle textStyleLatoMediumBlack20 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(20),color: cBlack);
   static TextStyle textStyleLatoMediumBlack35 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(35),color: cBlack);
@@ -65,5 +67,8 @@ class AppStyle {
   static TextStyle textStyleLatoMediumWhite15 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(15),color: cWhite);
   static TextStyle textStyleLatoMediumWhite20 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(20),color: cWhite);
   static TextStyle textStyleLatoMediumWhite25 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(25),color: cWhite);
+
+  static TextStyle textStyleLatoMediumGrey20 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(20),color: cGrey);
+  static TextStyle textStyleLatoMediumGrey25 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(25),color: cGrey);
 
 }

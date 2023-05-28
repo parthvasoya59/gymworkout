@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../AppRoute/app_route.dart';
 import '../../Constant/app_constant.dart';
+import '../../Utils/preference.dart';
 
 
 class HeightScreenLogic extends GetxController {
@@ -11,8 +13,12 @@ class HeightScreenLogic extends GetxController {
   RxDouble maximumLevel = 200.0.obs;
 
   onNextHightSelection() async {
-    debugPrint('onNextHightSelection => pointerValue ${pointerValue.value}');
-    // await Preference().saveBool(Const.prefGender, isMale.value);
+    debugPrint('onNextHightSelection => pointerValue ${pointerValue.value.round().toString()}');
+
+    await Preference().save(Const.prefHeight, pointerValue.value.round().toString());
+
+    //go to next screen
+    Get.toNamed(AppRoutes.weightScreen);
   }
 
   @override

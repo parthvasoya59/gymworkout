@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../AppRoute/app_route.dart';
 import '../../Constant/app_constant.dart';
+import '../../Utils/preference.dart';
 
 
 class WeightScreenLogic extends GetxController {
@@ -10,9 +12,13 @@ class WeightScreenLogic extends GetxController {
   RxDouble minimumLevel = 0.0.obs;
   RxDouble maximumLevel = 2000.0.obs;
 
-  onNextHightSelection() async {
-    debugPrint('onNextHightSelection => pointerValue ${pointerValue.value}');
-    // await Preference().saveBool(Const.prefGender, isMale.value);
+  onNextWeightSelection() async {
+    debugPrint('onNextWeightSelection => pointerValue ${pointerValue.value.toString()}');
+
+    await Preference().save(Const.prefWeight, pointerValue.value.toString());
+
+    //go to next screen
+    Get.toNamed(AppRoutes.bmiScreen);
   }
 
   @override

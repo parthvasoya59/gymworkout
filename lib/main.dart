@@ -34,6 +34,6 @@ class MyApp extends StatelessWidget {
         title: 'Gym Workout',
         debugShowCheckedModeBanner: false,
         getPages: AppRoutes.pages,
-        initialRoute: AppRoutes.weightScreen);
+        initialRoute: AppRoutes.goalScreen);
   }
 }

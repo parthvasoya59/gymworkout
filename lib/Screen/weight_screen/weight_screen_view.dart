@@ -78,7 +78,7 @@ class WeightScreenWidget extends GetView<WeightScreenLogic> {
                   title: "Next",
                   backgroundColor: cWhite,
                   textStyle: AppStyle.textStyleLatoMediumBlack20,
-                  onPressed: controller.onNextHightSelection,
+                  onPressed: controller.onNextWeightSelection,
                 ),
               ],
             ),
