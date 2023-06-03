@@ -4,7 +4,9 @@ import 'package:gymworkout/Screen/bmi_screen/bmi_screen_view.dart';
 import 'package:gymworkout/Screen/goal_screen/goal_screen_view.dart';
 import 'package:gymworkout/Screen/height_screen/height_screen_view.dart';
 import 'package:gymworkout/Screen/weight_screen/weight_screen_view.dart';
+import '../Screen/dashboard_screen/dashboard_screen_view.dart';
 import '../Screen/gender_sel_screen/gender_sel_screen_view.dart';
+import '../Screen/home_screen/home_screen_view.dart';
 import '../Screen/loading_screen/loading_screen_view.dart';
 import '../allbindings.dart';
 
@@ -16,6 +18,8 @@ class AppRoutes {
   static String bmiScreen = '/bmi_Screen';
   static String goalScreen = '/goal_Screen';
   static String loadingScreen = '/loading_Screen';
+  static String dashboardScreen = '/Dashboard_Screen';
+  static String homeScreen = '/home_Screen';
 
   static List<GetPage> pages = [
     GetPage(
@@ -52,6 +56,16 @@ class AppRoutes {
       name: loadingScreen,
       page: () => const LoadingScreenWidget(),
       bindings: [LoadingScreenBinding()],
+    ),
+    GetPage(
+      name: dashboardScreen,
+      page: () => const DashboardScreenWidget(),
+      bindings: [DashboardScreenBinding(), HomeScreenBinding(), GoalScreenBinding(), GenderSelScreenBinding()],
+    ),
+    GetPage(
+      name: homeScreen,
+      page: () => const HomeScreenWidget(),
+      // bindings: [HomeScreenBinding()],
     ),
   ];
 }
