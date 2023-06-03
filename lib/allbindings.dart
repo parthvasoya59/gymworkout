@@ -5,6 +5,7 @@ import 'Screen/area_screen/area_screen_logic.dart';
 import 'Screen/gender_sel_screen/gender_sel_screen_logic.dart';
 import 'Screen/goal_screen/goal_screen_logic.dart';
 import 'Screen/height_screen/height_screen_logic.dart';
+import 'Screen/loading_screen/loading_screen_logic.dart';
 import 'Screen/weight_screen/weight_screen_logic.dart';
 
 class GenderSelScreenBinding extends Bindings {
@@ -46,5 +47,12 @@ class GoalScreenBinding extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut(() => GoalScreenLogic());
+  }
+}
+
+class LoadingScreenBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut(() => LoadingScreenLogic());
   }
 }

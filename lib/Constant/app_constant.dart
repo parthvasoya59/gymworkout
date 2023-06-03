@@ -12,6 +12,8 @@ class Const {
   static const prefSelectedArea = 'selectedArea';
   static const prefHeight = 'height';
   static const prefWeight = 'weight';
+  static const prefGoalIndex = 'goalIndex';
+
 
   static const prefEmail = 'email';
   static const prefPass = 'password';

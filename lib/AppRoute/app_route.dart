@@ -5,6 +5,7 @@ import 'package:gymworkout/Screen/goal_screen/goal_screen_view.dart';
 import 'package:gymworkout/Screen/height_screen/height_screen_view.dart';
 import 'package:gymworkout/Screen/weight_screen/weight_screen_view.dart';
 import '../Screen/gender_sel_screen/gender_sel_screen_view.dart';
+import '../Screen/loading_screen/loading_screen_view.dart';
 import '../allbindings.dart';
 
 class AppRoutes {
@@ -14,6 +15,7 @@ class AppRoutes {
   static String weightScreen = '/weight_Screen';
   static String bmiScreen = '/bmi_Screen';
   static String goalScreen = '/goal_Screen';
+  static String loadingScreen = '/loading_Screen';
 
   static List<GetPage> pages = [
     GetPage(
@@ -45,6 +47,11 @@ class AppRoutes {
       name: goalScreen,
       page: () => const GoalScreenWidget(),
       bindings: [GoalScreenBinding()],
+    ),
+    GetPage(
+      name: loadingScreen,
+      page: () => const LoadingScreenWidget(),
+      bindings: [LoadingScreenBinding()],
     ),
   ];
 }

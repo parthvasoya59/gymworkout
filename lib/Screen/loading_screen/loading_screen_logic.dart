@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -8,17 +8,30 @@ import '../../Constant/app_constant.dart';
 import '../../Utils/preference.dart';
 
 
-class GoalScreenLogic extends GetxController {
+class LoadingScreenLogic extends GetxController {
 
-  RxInt goalIndex = 0.obs;
+  RxDouble progressvalue = 0.0.obs;
   //0 = Muscle Gain, 1 = Weight Loss, 2 = Fitness, 3 = Wellness
 
 
-  onNextGoal() async {
-    debugPrint('onNextGoal => goalIndex ${goalIndex.value}');
-    await Preference().saveInt(Const.prefGoalIndex, goalIndex.value);
+  onNextLoading() async {
+    debugPrint('onNextLoading => progressvalue ${progressvalue.value}');
+
     //go to next screen
-    Get.toNamed(AppRoutes.loadingScreen);
+    Get.toNamed(AppRoutes.goalScreen);
+  }
+
+  animationProgress(){
+    progressvalue.value = 0;
+    Timer.periodic(const Duration(milliseconds: 30),(timer)
+    {
+      if(progressvalue.value<100){
+        progressvalue.value++;
+      }else{
+        timer.cancel();
+        onNextLoading();
+      }
+    });
   }
 
 
@@ -26,6 +39,7 @@ class GoalScreenLogic extends GetxController {
   void onInit() async {
     // TODO: implement onInit
     super.onInit();
+    animationProgress();
   }
 
   @override
