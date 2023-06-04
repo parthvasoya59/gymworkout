@@ -3,6 +3,7 @@ import 'package:gymworkout/Screen/bmi_screen/bmi_screen_logic.dart';
 
 import 'Screen/area_screen/area_screen_logic.dart';
 import 'Screen/dashboard_screen/dashboard_screen_logic.dart';
+import 'Screen/excercise_screen/excercise_screen_logic.dart';
 import 'Screen/gender_sel_screen/gender_sel_screen_logic.dart';
 import 'Screen/goal_screen/goal_screen_logic.dart';
 import 'Screen/height_screen/height_screen_logic.dart';
@@ -89,5 +90,12 @@ class NotificationScreenBinding extends Bindings {
   void dependencies() {
     Get.put<NotificationScreenLogic>(NotificationScreenLogic());
     // Get.lazyPut(() => NotificationScreenLogic());
+  }
+}
+
+class ExcerciseScreenBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut(() => ExcerciseScreenLogic());
   }
 }

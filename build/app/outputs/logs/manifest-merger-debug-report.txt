@@ -80,7 +80,9 @@ MERGED from [:firebase_crashlytics] /Users/zeelmalaviya/Documents/Parth/applicat
 MERGED from [:firebase_auth] /Users/zeelmalaviya/Documents/Parth/applications/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:cloud_firestore] /Users/zeelmalaviya/Documents/Parth/applications/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] /Users/zeelmalaviya/Documents/Parth/applications/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:sqflite] /Users/zeelmalaviya/Documents/Parth/applications/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:fluttertoast] /Users/zeelmalaviya/Documents/Parth/applications/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] /Users/zeelmalaviya/Documents/Parth/applications/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/zeelmalaviya/.gradle/caches/transforms-3/b388efdc574bac56d7c24e414c25bdfa/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/zeelmalaviya/.gradle/caches/transforms-3/fca58b1fd6e970dd16c7ba060388dea9/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/zeelmalaviya/.gradle/caches/transforms-3/f59020816221e374480924d589d2fcf8/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:2:1-10:12
@@ -171,8 +173,12 @@ MERGED from [:cloud_firestore] /Users/zeelmalaviya/Documents/Parth/applications/
 MERGED from [:cloud_firestore] /Users/zeelmalaviya/Documents/Parth/applications/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] /Users/zeelmalaviya/Documents/Parth/applications/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] /Users/zeelmalaviya/Documents/Parth/applications/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] /Users/zeelmalaviya/Documents/Parth/applications/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] /Users/zeelmalaviya/Documents/Parth/applications/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:fluttertoast] /Users/zeelmalaviya/Documents/Parth/applications/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:fluttertoast] /Users/zeelmalaviya/Documents/Parth/applications/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/zeelmalaviya/Documents/Parth/applications/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/zeelmalaviya/Documents/Parth/applications/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/zeelmalaviya/.gradle/caches/transforms-3/b388efdc574bac56d7c24e414c25bdfa/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/zeelmalaviya/.gradle/caches/transforms-3/b388efdc574bac56d7c24e414c25bdfa/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/zeelmalaviya/.gradle/caches/transforms-3/fca58b1fd6e970dd16c7ba060388dea9/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:21:5-23:64

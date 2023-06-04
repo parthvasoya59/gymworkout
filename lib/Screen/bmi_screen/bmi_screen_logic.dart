@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../AppRoute/app_route.dart';
 import '../../Constant/app_constant.dart';
 import '../../Utils/preference.dart';
 
@@ -25,7 +26,9 @@ class BmiScreenLogic extends GetxController {
 
   onNextBmi() async {
     debugPrint('onNextBmi => bmiValue ${bmiValue.value}');
-    bmiCalculation();
+    // bmiCalculation();
+    //go to next screen
+    Get.toNamed(AppRoutes.goalScreen);
   }
 
   bmiCalculation() async {
