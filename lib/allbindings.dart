@@ -8,6 +8,8 @@ import 'Screen/goal_screen/goal_screen_logic.dart';
 import 'Screen/height_screen/height_screen_logic.dart';
 import 'Screen/home_screen/home_screen_logic.dart';
 import 'Screen/loading_screen/loading_screen_logic.dart';
+import 'Screen/notification_screen/notification_screen_logic.dart';
+import 'Screen/profile_screen/profile_screen_logic.dart';
 import 'Screen/weight_screen/weight_screen_logic.dart';
 
 class GenderSelScreenBinding extends Bindings {
@@ -69,6 +71,23 @@ class DashboardScreenBinding extends Bindings {
 class HomeScreenBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => HomeScreenLogic());
+    Get.put<HomeScreenLogic>(HomeScreenLogic());
+    // Get.lazyPut(() => HomeScreenLogic());
+  }
+}
+
+class ProfileScreenBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.put<ProfileScreenLogic>(ProfileScreenLogic());
+    // Get.lazyPut(() => ProfileScreenLogic());
+  }
+}
+
+class NotificationScreenBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.put<NotificationScreenLogic>(NotificationScreenLogic());
+    // Get.lazyPut(() => NotificationScreenLogic());
   }
 }

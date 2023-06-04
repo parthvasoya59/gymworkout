@@ -57,6 +57,7 @@ dev_dependencies:
   syncfusion_flutter_gauges: 20.4.52
   flutter_multi_select_items: ^0.4.2
   wheel_slider: ^1.1.1
+  flutter_svg:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

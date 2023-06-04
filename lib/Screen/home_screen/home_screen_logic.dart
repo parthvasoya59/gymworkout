@@ -10,36 +10,12 @@ import '../../Utils/preference.dart';
 
 class HomeScreenLogic extends GetxController {
 
-  RxDouble progressvalue = 0.0.obs;
   //0 = Muscle Gain, 1 = Weight Loss, 2 = Fitness, 3 = Wellness
-
-
-  onNextLoading() async {
-    debugPrint('onNextLoading => progressvalue ${progressvalue.value}');
-
-    //go to next screen
-    Get.toNamed(AppRoutes.goalScreen);
-  }
-
-  animationProgress(){
-    progressvalue.value = 0;
-    Timer.periodic(const Duration(milliseconds: 30),(timer)
-    {
-      if(progressvalue.value<100){
-        progressvalue.value++;
-      }else{
-        timer.cancel();
-        onNextLoading();
-      }
-    });
-  }
-
 
   @override
   void onInit() async {
     // TODO: implement onInit
     super.onInit();
-    animationProgress();
   }
 
   @override

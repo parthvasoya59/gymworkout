@@ -17,22 +17,21 @@ class DashboardScreenLogic extends GetxController {
   var scaffoldKey = GlobalKey<ScaffoldState>();
   RxInt tabIndex = 0.obs;
 
-
   List<BottomNavigationBarItem> bottomNavigationBarItemsofDriver = [
     BottomNavigationBarItem(
-      activeIcon: Icon(Icons.home, color: cBlack,),
+      activeIcon: Icon(Icons.home, color: cBlack, size: 30,),
       icon: Icon(Icons.home,),
       label: 'Home',
     ),
     BottomNavigationBarItem(
-      activeIcon: Icon(Icons.edit, color: cBlack,),
-      icon: Icon(Icons.edit,),
-      label: 'Home',
+      activeIcon: Icon(Icons.notification_add, color: cBlack, size: 30,),
+      icon: Icon(Icons.notification_add,),
+      label: 'Notification',
     ),
     BottomNavigationBarItem(
-      activeIcon: Icon(Icons.person, color: cBlack,),
+      activeIcon: Icon(Icons.person, color: cBlack, size: 30,),
       icon: Icon(Icons.person,),
-      label: 'Home',
+      label: 'Profile',
     ),
   ];
 

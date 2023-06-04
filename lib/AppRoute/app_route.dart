@@ -8,6 +8,8 @@ import '../Screen/dashboard_screen/dashboard_screen_view.dart';
 import '../Screen/gender_sel_screen/gender_sel_screen_view.dart';
 import '../Screen/home_screen/home_screen_view.dart';
 import '../Screen/loading_screen/loading_screen_view.dart';
+import '../Screen/notification_screen/notification_screen_view.dart';
+import '../Screen/profile_screen/profile_screen_view.dart';
 import '../allbindings.dart';
 
 class AppRoutes {
@@ -20,6 +22,8 @@ class AppRoutes {
   static String loadingScreen = '/loading_Screen';
   static String dashboardScreen = '/Dashboard_Screen';
   static String homeScreen = '/home_Screen';
+  static String notificationScreen = '/notification_Screen';
+  static String profileScreen = '/profile_Screen';
 
   static List<GetPage> pages = [
     GetPage(
@@ -60,12 +64,22 @@ class AppRoutes {
     GetPage(
       name: dashboardScreen,
       page: () => const DashboardScreenWidget(),
-      bindings: [DashboardScreenBinding(), HomeScreenBinding(), GoalScreenBinding(), GenderSelScreenBinding()],
+      bindings: [DashboardScreenBinding(), HomeScreenBinding(), NotificationScreenBinding(), ProfileScreenBinding()],
     ),
     GetPage(
       name: homeScreen,
       page: () => const HomeScreenWidget(),
       // bindings: [HomeScreenBinding()],
+    ),
+    GetPage(
+      name: notificationScreen,
+      page: () => const NotificationScreenWidget(),
+      // bindings: [NotificationScreenBinding()],
+    ),
+    GetPage(
+      name: profileScreen,
+      page: () => const ProfileScreenWidget(),
+      // bindings: [ProfileScreenBinding()],
     ),
   ];
 }
