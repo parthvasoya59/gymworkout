@@ -5,6 +5,7 @@ import 'package:gymworkout/Screen/goal_screen/goal_screen_view.dart';
 import 'package:gymworkout/Screen/height_screen/height_screen_view.dart';
 import 'package:gymworkout/Screen/weight_screen/weight_screen_view.dart';
 import '../Screen/dashboard_screen/dashboard_screen_view.dart';
+import '../Screen/excercise_detail_screen/excercise_detail_screen_view.dart';
 import '../Screen/excercise_screen/excercise_screen_view.dart';
 import '../Screen/gender_sel_screen/gender_sel_screen_view.dart';
 import '../Screen/home_screen/home_screen_view.dart';
@@ -26,6 +27,7 @@ class AppRoutes {
   static String notificationScreen = '/notification_Screen';
   static String profileScreen = '/profile_Screen';
   static String excerciseScreen = '/excercise_Screen';
+  static String excerciseDetailScreen = '/excerciseDetail_Screen';
 
   static List<GetPage> pages = [
     GetPage(
@@ -87,6 +89,11 @@ class AppRoutes {
       name: excerciseScreen,
       page: () => const ExcerciseScreenWidget(),
       bindings: [ExcerciseScreenBinding()],
+    ),
+    GetPage(
+      name: excerciseDetailScreen,
+      page: () => const ExcerciseDetailScreenWidget(),
+      bindings: [ExcerciseDetailScreenBinding()],
     ),
   ];
 }

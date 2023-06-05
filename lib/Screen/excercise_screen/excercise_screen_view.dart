@@ -76,9 +76,13 @@ class ExcerciseScreenWidget extends GetView<ExcerciseScreenLogic> {
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: w * 0.05, vertical: h * 0.01),
                       child: Material(
-
-                        child: ExcerciseTab(
-                          homeModel: HomeModel(imageUrl: controller.excerciseModelList.value[index].videoLink, txt: controller.excerciseModelList.value[index].excericeName)
+                        child: GestureDetector(
+                          onTap: (){
+                            controller.onTapofExcerciseTab(index);
+                          },
+                          child: ExcerciseTab(
+                            homeModel: HomeModel(imageUrl: controller.excerciseModelList.value[index].videoLink, txt: controller.excerciseModelList.value[index].excericeName)
+                          ),
                         ),
                           // homeModel: controller.excerciseListFMG[index],),
                       ),

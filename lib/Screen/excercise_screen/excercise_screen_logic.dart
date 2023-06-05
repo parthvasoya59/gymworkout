@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:gymworkout/AppRoute/NavigationArgs.dart';
+import 'package:gymworkout/AppRoute/app_route.dart';
 
 import '../../Utils/ExcerciseModel.dart';
 import '../home_screen/homemodel.dart';
@@ -11,13 +12,9 @@ class ExcerciseScreenLogic extends GetxController {
 
   RxString excerciseType = "".obs, goalType = "".obs, gender = "".obs;
 
-  List<HomeModel> excerciseListFMG = <HomeModel>[
-    HomeModel(imageUrl: "https://i.postimg.cc/264FJhDL/shoulderhomef.jpg", txt: "Shoulder"),
-    HomeModel(imageUrl: "https://i.postimg.cc/kgpct7sG/abshomef.jpg", txt: "Abs"),
-    HomeModel(imageUrl: "https://i.postimg.cc/qq4XdqJb/legshomef.jpg", txt: "Legs"),
-  ];
-
   RxList<ExcerciseModel> excerciseModelList = <ExcerciseModel>[].obs;
+
+  Rx<ExcerciseModel>? selectedExcerciseModel;
 
   getInitData() async {
     debugPrint('getInitData => excerciseType : ');
@@ -36,11 +33,18 @@ class ExcerciseScreenLogic extends GetxController {
     excerciseModelList.value = excerciseModelFromJson(data);
     debugPrint('loadData => excerciseModelList : ${excerciseModelList.value}');
     debugPrint('loadData => excerciseModelList length : ${excerciseModelList.value.length}');
-
     final jsonResult = jsonDecode(data);
+    selectedExcerciseModel = excerciseModelList.value.first.obs;
+    debugPrint('selectedExcerciseModel excericeName =>  ${selectedExcerciseModel!.value.excericeName}');
     // debugPrint('loadData => jsonResult : ${jsonResult}');
+  }
 
 
+
+  onTapofExcerciseTab(int index){
+    debugPrint('onTapofExcerciseTab => ');
+    selectedExcerciseModel!.value = excerciseModelList.value[index];
+    Get.toNamed(AppRoutes.excerciseDetailScreen);
   }
 
   @override
