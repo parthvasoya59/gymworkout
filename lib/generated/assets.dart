@@ -10,6 +10,7 @@ class Assets {
   static const String fontsNotoSansSemiBold = 'assets/fonts/NotoSans-SemiBold.ttf';
   static const String imagesFemalegenderselecction = 'assets/images/femalegenderselecction.png';
   static const String imagesHometoplogo = 'assets/images/hometoplogo.png';
+  static const String imagesLegshomem = 'assets/images/legshomem.png';
   static const String imagesMalefemaleboth = 'assets/images/malefemaleboth.png';
   static const String imagesMalegenderselecction = 'assets/images/malegenderselecction.png';
   static const String imagesMenheight = 'assets/images/menheight.png';
