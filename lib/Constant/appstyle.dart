@@ -19,12 +19,12 @@ double getVerticalSize(double px) {
 
 const familyLatoBlack = 'Lato-Black';
 const familyLatoBlackItalic = 'Lato-BlackItalic';
-const familyLatoBold= 'Lato-Bold';
-const familyLatoBoldItalic = 'Lato-BoldItalic';
-const familyLatoItalic = 'Lato-Italic';
+const familyLatoBold= 'NotoSans-Bold';
+const familyLatoBoldItalic = 'NotoSans-BoldItalic';
+const familyLatoItalic = 'NotoSans-Italic';
 const familyLatoLight = 'Lato-Light';
 const familyLatoLightItalic = 'Lato-LightItalic';
-const familyLatoMedium= 'Lato-Medium';
+const familyLatoMedium= 'NotoSans-Regular';
 const familyLatoMediumItalic = 'Lato-MediumItalic';
 const familyLatoRegular = 'Lato-Regular';
 const familyLatoThin = 'Lato-Thin';
@@ -69,6 +69,7 @@ class AppStyle {
   static TextStyle textStyleLatoMediumBlack35 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(35),color: cBlack);
   static TextStyle textStyleLatoLightBlack35 = textStyleFamilyLatoLight.copyWith(fontSize: getFontSize(35),color: cBlack);
   static TextStyle textStyleLatoMediumWhite15 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(15),color: cWhite);
+  static TextStyle textStyleLatoMediumWhite18 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(18),color: cWhite);
   static TextStyle textStyleLatoMediumWhite20 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(20),color: cWhite);
   static TextStyle textStyleLatoMediumWhite25 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(25),color: cWhite);
 
