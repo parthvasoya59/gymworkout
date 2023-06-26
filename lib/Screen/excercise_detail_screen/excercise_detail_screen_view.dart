@@ -3,7 +3,6 @@ import '../../Constant/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'excercise_detail_screen_logic.dart';
-import 'package:syncfusion_flutter_gauges/gauges.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
 

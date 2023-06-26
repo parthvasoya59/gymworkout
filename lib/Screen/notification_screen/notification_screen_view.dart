@@ -31,7 +31,7 @@ class NotificationScreenWidget extends GetView<NotificationScreenLogic> {
               Column(
                 children: [
                   Text(
-                    "Notification Screen!",
+                    "No Notification",
                     textAlign: TextAlign.center,
                     style: AppStyle.textStyleLatoBoldWhite30,
                   ),

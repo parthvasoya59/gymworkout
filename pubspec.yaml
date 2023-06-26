@@ -59,6 +59,8 @@ dev_dependencies:
   wheel_slider: ^1.1.1
   flutter_svg:
   cached_network_image:
+  flutter_local_notifications: ^14.1.1
+  firebase_messaging: ^14.6.3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

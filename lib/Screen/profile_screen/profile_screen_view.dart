@@ -4,7 +4,6 @@ import '../../Constant/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'profile_screen_logic.dart';
-import 'package:syncfusion_flutter_gauges/gauges.dart';
 
 class ProfileScreenWidget extends GetView<ProfileScreenLogic> {
   const ProfileScreenWidget({Key? key}) : super(key: key);

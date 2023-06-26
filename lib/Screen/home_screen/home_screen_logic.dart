@@ -39,11 +39,11 @@ class HomeScreenLogic extends GetxController {
   getInitiData() async {
     debugPrint('getInitiData => isMale : ${isMale.value}');
 
-    isMale.value = await Preference().readBool(Const.prefGender);
+    isMale.value = await Preference().readBool(Const.prefGender) ?? true;
     debugPrint('getInitiData => isMale 1 : ${isMale.value}');
 
     //0 = Muscle Gain, 1 = Weight Loss, 2 = Fitness, 3 = Wellness
-    goalIndex.value = await Preference().readInt(Const.prefGoalIndex);
+    goalIndex.value = await Preference().readInt(Const.prefGoalIndex) ?? 1;
     debugPrint('getInitiData => goalIndex 1 : ${goalIndex.value}');
 
     if(isMale.value == true && goalIndex.value == 0){ // Male + Muscle Gain

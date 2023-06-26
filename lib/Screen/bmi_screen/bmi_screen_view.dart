@@ -1,9 +1,7 @@
 import 'package:gymworkout/Constant/colors.dart';
-import '../../Constant/app_image.dart';
 import '../../Constant/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:wheel_slider/wheel_slider.dart';
 
 import '../../widget/custom_button.dart';
 import '../../widget/progress_bar.dart';

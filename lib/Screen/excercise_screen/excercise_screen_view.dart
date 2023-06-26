@@ -1,10 +1,8 @@
 import 'package:gymworkout/Constant/colors.dart';
 import 'package:gymworkout/Screen/home_screen/homemodel.dart';
-import '../../Constant/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../widget/excercisetab.dart';
-import '../../widget/hometab.dart';
 import 'excercise_screen_logic.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
