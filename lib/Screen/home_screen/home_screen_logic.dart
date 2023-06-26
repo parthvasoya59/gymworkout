@@ -19,12 +19,15 @@ class HomeScreenLogic extends GetxController {
   RxList<HomeModel> homeModelList = <HomeModel>[].obs;
 
   List<HomeModel> homeModelListMMG = <HomeModel>[
-    HomeModel(imageUrl: "https://i.postimg.cc/CLMHPR6d/chesthomem.jpg", txt: "Chest"),
-    HomeModel(imageUrl: "https://i.postimg.cc/rsjGyTz8/backhomem.jpg", txt: "Back"),
-    HomeModel(imageUrl: "https://i.postimg.cc/JhHQNSYq/shoulderhomem.jpg", txt: "Shoulder"),
-    HomeModel(imageUrl: "https://i.postimg.cc/pTNJqkgt/armshomem.jpg", txt: "Arms"),
     HomeModel(imageUrl: "https://i.postimg.cc/T2JJJV0Z/abshomem.jpg", txt: "Abs"),
+    HomeModel(imageUrl: "https://i.postimg.cc/rsjGyTz8/backhomem.jpg", txt: "Back"),
+    HomeModel(imageUrl: "https://i.postimg.cc/rpgp1xhw/bicepshomem.jpg", txt: "Biceps"),
+    HomeModel(imageUrl: "https://i.postimg.cc/R0cntWtP/triceps.jpg", txt: "Triceps"),
+    HomeModel(imageUrl: "https://i.postimg.cc/CLMHPR6d/chesthomem.jpg", txt: "Chest"),
     HomeModel(imageUrl: "https://i.postimg.cc/RCsmKXCp/legshomem.png", txt: "Legs"),
+    HomeModel(imageUrl: "https://i.postimg.cc/JhHQNSYq/shoulderhomem.jpg", txt: "Shoulder"),
+    HomeModel(imageUrl: "https://i.postimg.cc/FHRsV7Lr/trapeziushomef.jpg", txt: "Trapezius"),
+    HomeModel(imageUrl: "https://i.postimg.cc/rsjGyTz8/backhomem.jpg", txt: "Full Body"),
   ];
 
   List<HomeModel> homeModelListFMG = <HomeModel>[
@@ -53,16 +56,17 @@ class HomeScreenLogic extends GetxController {
 
   onTapOfHomeTab(String txt){
     String appended = "";
-    if(isMale.value == true && goalIndex.value == 0){ // Male + Muscle Gain
-      appended = "MMG";
-    } else if (isMale.value == false && goalIndex.value == 0){ // Female + Muscle Gain
-      appended = "FMG";
-    }
+    // if(isMale.value == true && goalIndex.value == 0){ // Male + Muscle Gain
+    //   appended = "MMG";
+    // } else if (isMale.value == false && goalIndex.value == 0){ // Female + Muscle Gain
+    //   appended = "FMG";
+    // }
 
     debugPrint('onTapOfHomeTab => excerciseType : ${txt + appended}');
 
     Get.toNamed(AppRoutes.excerciseScreen, arguments: {
-      NavigationArgs.excerciseType: txt + appended
+      NavigationArgs.excerciseType: txt
+      // NavigationArgs.excerciseType: txt + appended
     });
 
   }

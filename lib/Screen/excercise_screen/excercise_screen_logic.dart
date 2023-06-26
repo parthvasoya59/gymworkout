@@ -4,13 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:gymworkout/AppRoute/NavigationArgs.dart';
 import 'package:gymworkout/AppRoute/app_route.dart';
+import 'package:gymworkout/Screen/home_screen/home_screen_logic.dart';
 
 import '../../Utils/ExcerciseModel.dart';
 import '../home_screen/homemodel.dart';
 
 class ExcerciseScreenLogic extends GetxController {
 
-  RxString excerciseType = "".obs, goalType = "".obs, gender = "".obs;
+  RxString excerciseType = "".obs, goalType = "".obs, gender = "".obs, backImage = "".obs;
 
   RxList<ExcerciseModel> excerciseModelList = <ExcerciseModel>[].obs;
 
@@ -25,11 +26,13 @@ class ExcerciseScreenLogic extends GetxController {
     gender.value = excerciseType.value.substring(length-3, length-2);
     debugPrint('getInitData => goalType : ${goalType.value}');
     debugPrint('getInitData => gender : ${gender.value}');
+    backImage.value = Get.find<HomeScreenLogic>().homeModelListMMG.where((element) => element.txt == excerciseType.value).first.imageUrl;
     loadData();
   }
 
   loadData() async {
-    String data = await DefaultAssetBundle.of(Get.context!).loadString("assets/data/ChestMMG.json");
+    String urlFile = "assets/data/${excerciseType.value}.json";
+    String data = await DefaultAssetBundle.of(Get.context!).loadString(urlFile);
     excerciseModelList.value = excerciseModelFromJson(data);
     debugPrint('loadData => excerciseModelList : ${excerciseModelList.value}');
     debugPrint('loadData => excerciseModelList length : ${excerciseModelList.value.length}');

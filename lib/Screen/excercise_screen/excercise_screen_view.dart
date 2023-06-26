@@ -33,11 +33,11 @@ class ExcerciseScreenWidget extends GetView<ExcerciseScreenLogic> {
             backgroundColor: cBlack,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text('Chest', textScaleFactor: 1),
-              background: CachedNetworkImage(
+              title: Text('${controller.excerciseType.value}', textScaleFactor: 1),
+              background: controller.backImage.value == "" ? Container() : CachedNetworkImage(
                 width: w,
                 height: h * 0.2,
-                imageUrl: "https://i.postimg.cc/CLMHPR6d/chesthomem.jpg",
+                imageUrl: "${controller.backImage.value}",
                 imageBuilder: (cnt, imageProvider) {
                   return Container(
                     decoration: BoxDecoration(
