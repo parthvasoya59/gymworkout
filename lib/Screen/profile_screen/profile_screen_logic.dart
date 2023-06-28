@@ -49,6 +49,11 @@ class ProfileScreenLogic extends GetxController {
 
   }
 
+  onUpdateProfile(){
+    debugPrint("onUpdateProfile ---> ");
+    Get.toNamed(AppRoutes.updateProfileScreen);
+  }
+
   @override
   void onInit() async {
     // TODO: implement onInit

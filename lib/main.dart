@@ -4,11 +4,24 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:gymworkout/Constant/app_constant.dart';
+import 'package:gymworkout/Utils/preference.dart';
 import '../AppRoute/app_route.dart';
 import '../../Utils/Notification/firebase_notificatation_handler.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 
+bool isDashboard = false;
+Future getRedirect() async {
+  // we check is goal selected or not based on that we redirect, because it's last screen for user form
+  int t = await Preference().readInt(Const.prefGoalIndex) ?? 10;
+  if(t != 10){
+    isDashboard = true;
+  }else{
+    isDashboard = false;
+  }
+  debugPrint("getRedirect ==> isDashboard : ${isDashboard}");
+}
 
 
 FirebaseNotifications firebaseNotifications = FirebaseNotifications();
@@ -41,18 +54,20 @@ void main() async {
   }
 
 
-  //Crashlytics
-  FlutterError.onError = (errorDetails) {
-    FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
-  };
-  // Pass all uncaught asynchronous errors that aren't handled by the Flutter framework to Crashlytics
-  PlatformDispatcher.instance.onError = (error, stack) {
-    FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
-    return true;
-  };
+  // //Crashlytics
+  // FlutterError.onError = (errorDetails) {
+  //   FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
+  // };
+  // // Pass all uncaught asynchronous errors that aren't handled by the Flutter framework to Crashlytics
+  // PlatformDispatcher.instance.onError = (error, stack) {
+  //   FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+  //   return true;
+  // };
 
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
       overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
+
+  getRedirect();
 
   runApp(const MyApp());
 }
@@ -69,6 +84,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         navigatorKey: navigatorKey,
         getPages: AppRoutes.pages,
-        initialRoute: AppRoutes.genderSelScreen);
+        initialRoute: isDashboard ?  AppRoutes.dashboardScreen : AppRoutes.genderSelScreen
+    );
   }
 }

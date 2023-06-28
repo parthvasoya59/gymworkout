@@ -3,6 +3,7 @@ import 'package:gymworkout/Screen/area_screen/area_screen_view.dart';
 import 'package:gymworkout/Screen/bmi_screen/bmi_screen_view.dart';
 import 'package:gymworkout/Screen/goal_screen/goal_screen_view.dart';
 import 'package:gymworkout/Screen/height_screen/height_screen_view.dart';
+import 'package:gymworkout/Screen/update_profile_screen/update_profile_screen_view.dart';
 import 'package:gymworkout/Screen/weight_screen/weight_screen_view.dart';
 import '../Screen/dashboard_screen/dashboard_screen_view.dart';
 import '../Screen/excercise_detail_screen/excercise_detail_screen_view.dart';
@@ -26,6 +27,7 @@ class AppRoutes {
   static String homeScreen = '/home_Screen';
   static String notificationScreen = '/notification_Screen';
   static String profileScreen = '/profile_Screen';
+  static String updateProfileScreen = '/update_Profile_Screen';
   static String excerciseScreen = '/excercise_Screen';
   static String excerciseDetailScreen = '/excerciseDetail_Screen';
 
@@ -94,6 +96,11 @@ class AppRoutes {
       name: excerciseDetailScreen,
       page: () => const ExcerciseDetailScreenWidget(),
       bindings: [ExcerciseDetailScreenBinding()],
+    ),
+    GetPage(
+      name: updateProfileScreen,
+      page: () => const UpdateProfileScreenWidget(),
+      bindings: [UpdateProfileScreenBinding()],
     ),
   ];
 }

@@ -9,3 +9,6 @@ Color cGreyBack = const Color(0xFFC4C0C0);
 Color cRed =  const Color(0xFFCB0000);
 Color cBlue =  const Color(0xFF008BCB);
 Color cGreen =  const Color(0xFF03830F);
+
+Color cDarkGreyBorder = const Color(0xFFC4C4C4);
+Color cDarkGrey = const Color(0xFFB3B3B3);

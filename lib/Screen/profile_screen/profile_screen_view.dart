@@ -3,6 +3,7 @@ import '../../Constant/app_image.dart';
 import '../../Constant/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../widget/custom_button.dart';
 import 'profile_screen_logic.dart';
 
 class ProfileScreenWidget extends GetView<ProfileScreenLogic> {
@@ -83,6 +84,13 @@ class ProfileScreenWidget extends GetView<ProfileScreenLogic> {
                         "Goal  ", controller.goal.value.toString(), w);
                   }),
                   customeSizedBox(h),
+                  customeSizedBox(h),
+                  CustomButton(
+                    title: "Edit Profile",
+                    backgroundColor: cWhite,
+                    textStyle: AppStyle.textStyleLatoBoldBlack18,
+                    onPressed: controller.onUpdateProfile,
+                  ),
                   customeSizedBox(h),
                 ],
               )
