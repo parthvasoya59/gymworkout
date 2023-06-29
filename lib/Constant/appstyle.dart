@@ -75,6 +75,8 @@ class AppStyle {
   static TextStyle textStyleLatoMediumWhite20 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(20),color: cWhite);
   static TextStyle textStyleLatoMediumWhite25 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(25),color: cWhite);
 
+  static TextStyle textStyleLatoMediumRed15 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(15),color: cRed);
+
   static TextStyle textStyleLatoMediumGrey15 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(15),color: cGrey);
   static TextStyle textStyleLatoMediumGrey20 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(20),color: cGrey);
   static TextStyle textStyleLatoMediumGrey25 = textStyleFamilyLatoMedium.copyWith(fontSize: getFontSize(25),color: cGrey);

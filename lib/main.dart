@@ -15,6 +15,8 @@ bool isDashboard = false;
 Future getRedirect() async {
   // we check is goal selected or not based on that we redirect, because it's last screen for user form
   int t = await Preference().readInt(Const.prefGoalIndex) ?? 10;
+  debugPrint("getRedirect ==> t : ${t}");
+
   if(t != 10){
     isDashboard = true;
   }else{
@@ -67,18 +69,43 @@ void main() async {
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
       overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
 
-  getRedirect();
+  await getRedirect();
 
   runApp(const MyApp());
 }
 
 var navigatorKey = GlobalKey<NavigatorState>();
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+// changeScreen(){
+//   isDashboard = isDashboard;
+//   if(isDashboard){
+//     debugPrint("changeScreen");
+//     Get.offAllNamed(AppRoutes.dashboardScreen);
+//   }
+// }
+
+class _MyAppState extends State<MyApp> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getRedirect();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    // changeScreen();
+    // setState(() {
+    //
+    // });
     return GetMaterialApp(
         title: 'Gym Workout',
         debugShowCheckedModeBanner: false,

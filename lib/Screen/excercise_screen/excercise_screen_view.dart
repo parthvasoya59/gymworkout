@@ -74,6 +74,7 @@ class ExcerciseScreenWidget extends GetView<ExcerciseScreenLogic> {
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: w * 0.05, vertical: h * 0.01),
                       child: Material(
+                        color: Colors.transparent,
                         child: GestureDetector(
                           onTap: (){
                             controller.onTapofExcerciseTab(index);

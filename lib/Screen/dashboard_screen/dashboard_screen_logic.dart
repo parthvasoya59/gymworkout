@@ -6,6 +6,8 @@ import 'package:gymworkout/Constant/colors.dart';
 import 'package:gymworkout/Screen/gender_sel_screen/gender_sel_screen_logic.dart';
 import 'package:gymworkout/Screen/goal_screen/goal_screen_logic.dart';
 import 'package:gymworkout/Screen/home_screen/home_screen_logic.dart';
+import 'package:gymworkout/Screen/notification_screen/notification_screen_logic.dart';
+import 'package:gymworkout/Screen/profile_screen/profile_screen_logic.dart';
 
 import '../../AppRoute/app_route.dart';
 import '../../Constant/app_constant.dart';
@@ -14,7 +16,7 @@ import '../../Utils/preference.dart';
 
 class DashboardScreenLogic extends GetxController {
 
-  var scaffoldKey = GlobalKey<ScaffoldState>();
+  // GlobalKey scaffoldKey = GlobalKey<ScaffoldState>();
   RxInt tabIndex = 0.obs;
 
   List<BottomNavigationBarItem> bottomNavigationBarItemsofDriver = [
@@ -36,29 +38,33 @@ class DashboardScreenLogic extends GetxController {
   ];
 
   void changeTabIndex(int index) {
+    if (index == 0) {
+      bool home = Get.isRegistered<HomeScreenLogic>();
+      debugPrint('index == 0 home --> ${home}');
+      if (home == false) {
+        Get.put<HomeScreenLogic>(HomeScreenLogic());
+      }
+      Get.find<HomeScreenLogic>().onInit();
+    } else if (index == 1) {
+      bool noti = Get.isRegistered<NotificationScreenLogic>();
+      debugPrint('index == 1 noti --> ${noti}');
+      if (noti == false) {
+        Get.put<NotificationScreenLogic>(NotificationScreenLogic());
+      }
+    } else if (index == 2) {
+      bool pro = Get.isRegistered<ProfileScreenLogic>();
+      debugPrint('index == 2 pro --> ${pro}');
+      if (pro == false) {
+        Get.put<ProfileScreenLogic>(ProfileScreenLogic());
+      }
+      Get.find<ProfileScreenLogic>().loadData();
+    }
+
     tabIndex.value = index;
 
     debugPrint('changeTabIndex tabIndex.value == ${tabIndex.value}');
 
-    if (index == 0) {
-      bool home = Get.isRegistered<HomeScreenLogic>();
-      debugPrint('index == 0');
-      if (home == false) {
-        Get.put<HomeScreenLogic>(HomeScreenLogic());
-      }
-    } else if (index == 1) {
-      bool edit = Get.isRegistered<GoalScreenLogic>();
-      debugPrint('index == 1');
-      if (edit == false) {
-        Get.put<GoalScreenLogic>(GoalScreenLogic());
-      } else if (index == 2) {
-        bool edit = Get.isRegistered<GenderSelScreenLogic>();
-        debugPrint('index == 2');
-        if (edit == false) {
-          Get.put<GenderSelScreenLogic>(GenderSelScreenLogic());
-        }
-      }
-    }
+  }
 
     @override
     void onInit() async {
@@ -78,7 +84,7 @@ class DashboardScreenLogic extends GetxController {
       super.onClose();
     }
   }
-}
+
 
 /*
 Underweight = <18.5

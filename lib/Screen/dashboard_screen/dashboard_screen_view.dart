@@ -24,7 +24,7 @@ class DashboardScreenWidget extends GetView<DashboardScreenLogic> {
     return Obx(() {
       return Scaffold(
         backgroundColor: cBlack,
-        key: controller.scaffoldKey,
+        // key: controller.scaffoldKey,
         body: IndexedStack(
           index: controller.tabIndex.value,
           children: [

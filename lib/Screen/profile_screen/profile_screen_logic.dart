@@ -11,12 +11,15 @@ import '../../Utils/preference.dart';
 
 class ProfileScreenLogic extends GetxController {
 
-  var homeCon = Get.find<HomeScreenLogic>();
+  RxBool isMale = true.obs;
 
   RxDouble bmiValue = 0.00.obs, weightValue = 45.0.obs, heightValue = 130.0.obs;
   RxString keyForMap = "".obs, goal = "".obs;
 
-  loadData() async {
+  Future loadData() async {
+    isMale.value = await Preference().readBool(Const.prefGender) ?? true;
+    debugPrint('getInitiData => isMale 1 : ${isMale.value}');
+
     weightValue.value = double.parse(await Preference().read(Const.prefWeight));
     heightValue.value = double.parse(await Preference().read(Const.prefHeight));
     debugPrint('onNextBmi => weight ${weightValue.value} kg');
@@ -46,7 +49,7 @@ class ProfileScreenLogic extends GetxController {
     }else{
       goal.value = "Wellness";
     }
-
+    debugPrint('loadData done');
   }
 
   onUpdateProfile(){
@@ -55,7 +58,7 @@ class ProfileScreenLogic extends GetxController {
   }
 
   @override
-  void onInit() async {
+  void onInit() {
     // TODO: implement onInit
     super.onInit();
     loadData();

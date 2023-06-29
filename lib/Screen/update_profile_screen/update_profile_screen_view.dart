@@ -125,6 +125,13 @@ class UpdateProfileScreenWidget extends GetView<UpdateProfileScreenLogic> {
                         }),
                       ],
                     ),
+                    controller.heightError.value != ""
+                        ? customeSizedBox(h)
+                        : SizedBox(),
+                    Obx(() {
+                      return controller.heightError.value != "" ? Text(controller.heightError.value,
+                        style: AppStyle.textStyleLatoMediumRed15) : SizedBox();
+                    }) ,
                     customeSizedBox(h), customeSizedBox(h),
                     Text('Weight', style: AppStyle.textStyleLatoBoldWhite18),
                     customeSizedBox(h),
@@ -155,6 +162,13 @@ class UpdateProfileScreenWidget extends GetView<UpdateProfileScreenLogic> {
                         }),
                       ],
                     ),
+                    controller.weightError.value != ""
+                        ? customeSizedBox(h)
+                        : SizedBox(),
+                    Obx(() {
+                      return controller.weightError.value != "" ? Text(controller.weightError.value,
+                        style: AppStyle.textStyleLatoMediumRed15) : SizedBox();
+                    }) ,
                     customeSizedBox(h), customeSizedBox(h),
                     customeSizedBox(h), customeSizedBox(h),
                     Center(

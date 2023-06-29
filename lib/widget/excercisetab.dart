@@ -25,6 +25,8 @@ class ExcerciseTab extends StatelessWidget {
       height: h * 0.1,
       decoration: BoxDecoration(
           color: cGreyBack,
+          // color: cGreyBack,
+        borderRadius: BorderRadius.circular(15)
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -32,7 +34,7 @@ class ExcerciseTab extends StatelessWidget {
           Container(
             width: w * 0.3,
             height: h * 0.1,
-            color: cGreyBack,
+            color: cBlack,
             child: CachedNetworkImage(
               width: w * 0.3,
               height: h * 0.1,
@@ -72,7 +74,10 @@ class ExcerciseTab extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: w * 0.05),
               child: Container(
-                color: cGreyBack,
+                decoration: BoxDecoration(
+                    color: cGreyBack,
+                    borderRadius: BorderRadius.circular(15)
+                ),
                 child: Center(
                   child: Text(
                     homeModel.txt,
