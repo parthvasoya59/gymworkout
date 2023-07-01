@@ -1,10 +1,10 @@
 import 'package:gymworkout/Constant/colors.dart';
 import 'package:gymworkout/Screen/home_screen/home_screen_view.dart';
-import 'package:gymworkout/Screen/notification_screen/notification_screen_view.dart';
 import 'package:gymworkout/Screen/profile_screen/profile_screen_view.dart';
 import '../../Constant/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../calculator_screen/calculator_screen_view.dart';
 import 'dashboard_screen_logic.dart';
 
 class DashboardScreenWidget extends GetView<DashboardScreenLogic> {
@@ -29,7 +29,7 @@ class DashboardScreenWidget extends GetView<DashboardScreenLogic> {
           index: controller.tabIndex.value,
           children: [
             HomeScreenWidget(),
-            NotificationScreenWidget(),
+            CalculatorScreenWidget(),
             ProfileScreenWidget()
           ],
         ),
@@ -39,7 +39,7 @@ class DashboardScreenWidget extends GetView<DashboardScreenLogic> {
             currentIndex: controller.tabIndex.value,
             type: BottomNavigationBarType.fixed,
             backgroundColor: cWhite,
-            selectedItemColor: cGreen,
+            selectedItemColor: cBlack,
             unselectedItemColor: cBlack,
             showUnselectedLabels: true,
             unselectedLabelStyle: AppStyle.textStyleLatoMediumBlack15,

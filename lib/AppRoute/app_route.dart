@@ -5,14 +5,15 @@ import 'package:gymworkout/Screen/goal_screen/goal_screen_view.dart';
 import 'package:gymworkout/Screen/height_screen/height_screen_view.dart';
 import 'package:gymworkout/Screen/update_profile_screen/update_profile_screen_view.dart';
 import 'package:gymworkout/Screen/weight_screen/weight_screen_view.dart';
+import '../Screen/calculator_screen/calculator_screen_view.dart';
 import '../Screen/dashboard_screen/dashboard_screen_view.dart';
 import '../Screen/excercise_detail_screen/excercise_detail_screen_view.dart';
 import '../Screen/excercise_screen/excercise_screen_view.dart';
 import '../Screen/gender_sel_screen/gender_sel_screen_view.dart';
 import '../Screen/home_screen/home_screen_view.dart';
 import '../Screen/loading_screen/loading_screen_view.dart';
-import '../Screen/notification_screen/notification_screen_view.dart';
 import '../Screen/profile_screen/profile_screen_view.dart';
+import '../Screen/result_screen/result_screen_view.dart';
 import '../allbindings.dart';
 
 class AppRoutes {
@@ -30,6 +31,7 @@ class AppRoutes {
   static String updateProfileScreen = '/update_Profile_Screen';
   static String excerciseScreen = '/excercise_Screen';
   static String excerciseDetailScreen = '/excerciseDetail_Screen';
+  static String resultScreen = '/result_Screen';
 
   static List<GetPage> pages = [
     GetPage(
@@ -70,7 +72,7 @@ class AppRoutes {
     GetPage(
       name: dashboardScreen,
       page: () => const DashboardScreenWidget(),
-      bindings: [DashboardScreenBinding(), HomeScreenBinding(), NotificationScreenBinding(), ProfileScreenBinding()],
+      bindings: [DashboardScreenBinding(), HomeScreenBinding(), CalculatorScreenBinding(), ProfileScreenBinding()],
     ),
     GetPage(
       name: homeScreen,
@@ -79,7 +81,7 @@ class AppRoutes {
     ),
     GetPage(
       name: notificationScreen,
-      page: () => const NotificationScreenWidget(),
+      page: () => const CalculatorScreenWidget(),
       // bindings: [NotificationScreenBinding()],
     ),
     GetPage(
@@ -101,6 +103,11 @@ class AppRoutes {
       name: updateProfileScreen,
       page: () => const UpdateProfileScreenWidget(),
       bindings: [UpdateProfileScreenBinding()],
+    ),
+    GetPage(
+      name: resultScreen,
+      page: () => const ResultScreenWidget(),
+      bindings: [ResultScreenBinding()],
     ),
   ];
 }
