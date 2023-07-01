@@ -122,7 +122,7 @@ class GenderSelScreenWidget extends GetView<GenderSelScreenLogic> {
               Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Progressbar(valueIn: 14.28),
+                  Progressbar(valueIn: 100 / 6 * 1),
                   SizedBox(height: h * 0.03,),
                   CustomButton(
                     title: "Next",

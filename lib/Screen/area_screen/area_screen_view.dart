@@ -64,7 +64,7 @@ class AreaScreenWidget extends GetView<AreaScreenLogic> {
               Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Progressbar(valueIn: 14.28*2),
+                  Progressbar(valueIn: 100 / 6 * 2),
                   SizedBox(height: h * 0.03,),
                   CustomButton(
                     title: "Next",

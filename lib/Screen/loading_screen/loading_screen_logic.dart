@@ -18,7 +18,7 @@ class LoadingScreenLogic extends GetxController {
     debugPrint('onNextLoading => progressvalue ${progressvalue.value}');
 
     //go to next screen
-    Get.toNamed(AppRoutes.dashboardScreen);
+    Get.offAllNamed(AppRoutes.dashboardScreen);
   }
 
   animationProgress(){
