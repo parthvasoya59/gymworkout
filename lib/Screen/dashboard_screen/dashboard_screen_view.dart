@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../calculator_screen/calculator_screen_view.dart';
 import 'dashboard_screen_logic.dart';
+import 'package:upgrader/upgrader.dart';
 
 class DashboardScreenWidget extends GetView<DashboardScreenLogic> {
   const DashboardScreenWidget({Key? key}) : super(key: key);
@@ -22,30 +23,32 @@ class DashboardScreenWidget extends GetView<DashboardScreenLogic> {
         .size
         .width;
     return Obx(() {
-      return Scaffold(
-        backgroundColor: cBlack,
-        // key: controller.scaffoldKey,
-        body: IndexedStack(
-          index: controller.tabIndex.value,
-          children: [
-            HomeScreenWidget(),
-            CalculatorScreenWidget(),
-            ProfileScreenWidget()
-          ],
-        ),
-        bottomNavigationBar:
-          BottomNavigationBar(
-            onTap: controller.changeTabIndex,
-            currentIndex: controller.tabIndex.value,
-            type: BottomNavigationBarType.fixed,
-            backgroundColor: cWhite,
-            selectedItemColor: cBlack,
-            unselectedItemColor: cBlack,
-            showUnselectedLabels: true,
-            unselectedLabelStyle: AppStyle.textStyleLatoMediumBlack15,
-            selectedLabelStyle: AppStyle.textStyleLatoBoldBlack18,
-            items: [...controller.bottomNavigationBarItemsofDriver],
+      return UpgradeAlert(
+        child: Scaffold(
+          backgroundColor: cBlack,
+          // key: controller.scaffoldKey,
+          body: IndexedStack(
+            index: controller.tabIndex.value,
+            children: [
+              HomeScreenWidget(),
+              CalculatorScreenWidget(),
+              ProfileScreenWidget()
+            ],
           ),
+          bottomNavigationBar:
+            BottomNavigationBar(
+              onTap: controller.changeTabIndex,
+              currentIndex: controller.tabIndex.value,
+              type: BottomNavigationBarType.fixed,
+              backgroundColor: cWhite,
+              selectedItemColor: cBlack,
+              unselectedItemColor: cBlack,
+              showUnselectedLabels: true,
+              unselectedLabelStyle: AppStyle.textStyleLatoMediumBlack15,
+              selectedLabelStyle: AppStyle.textStyleLatoBoldBlack18,
+              items: [...controller.bottomNavigationBarItemsofDriver],
+            ),
+        ),
       );
     });
   }
