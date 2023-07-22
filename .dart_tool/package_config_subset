@@ -2,6 +2,10 @@ _flutterfire_internals
 2.18
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/_flutterfire_internals-1.3.3/
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/_flutterfire_internals-1.3.3/lib/
+archive
+2.12
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/archive-3.3.7/
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/archive-3.3.7/lib/
 args
 2.18
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/args-2.4.1/
@@ -50,6 +54,10 @@ collection
 2.18
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/collection-1.17.1/
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/collection-1.17.1/lib/
+convert
+2.18
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/convert-3.1.1/
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/convert-3.1.1/lib/
 crypto
 2.19
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/crypto-3.0.3/
@@ -158,6 +166,10 @@ flutter_multi_select_items
 2.12
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/flutter_multi_select_items-0.4.2/
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/flutter_multi_select_items-0.4.2/lib/
+flutter_native_splash
+2.19
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/flutter_native_splash-2.3.1/
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/flutter_native_splash-2.3.1/lib/
 flutter_svg
 2.19
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/flutter_svg-2.0.6/
@@ -182,6 +194,10 @@ http_parser
 2.12
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/http_parser-4.0.2/
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib/
+image
+2.15
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/image-4.0.17/
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/image-4.0.17/lib/
 intl
 2.12
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/intl-0.18.1/
@@ -270,6 +286,10 @@ plugin_platform_interface
 2.17
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.4/
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.4/lib/
+pointycastle
+2.14
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/pointycastle-3.7.3/
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/pointycastle-3.7.3/lib/
 process
 2.14
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/process-4.2.4/
@@ -358,6 +378,10 @@ typed_data
 2.17
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/typed_data-1.3.2/
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/typed_data-1.3.2/lib/
+universal_io
+2.17
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/universal_io-2.2.2/
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/universal_io-2.2.2/lib/
 upgrader
 2.18
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/upgrader-7.1.0/
@@ -442,6 +466,10 @@ xml
 2.19
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/xml-6.3.0/
 file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/xml-6.3.0/lib/
+yaml
+2.19
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/yaml-3.1.2/
+file:///Users/zeelmalaviya/.pub-cache/hosted/pub.dev/yaml-3.1.2/lib/
 sky_engine
 3.0
 file:///Users/zeelmalaviya/Documents/Parth/Flutter/flutter/bin/cache/pkg/sky_engine/

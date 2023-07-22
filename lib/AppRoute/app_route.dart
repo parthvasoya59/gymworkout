@@ -3,6 +3,7 @@ import 'package:gymworkout/Screen/area_screen/area_screen_view.dart';
 import 'package:gymworkout/Screen/bmi_screen/bmi_screen_view.dart';
 import 'package:gymworkout/Screen/goal_screen/goal_screen_view.dart';
 import 'package:gymworkout/Screen/height_screen/height_screen_view.dart';
+import 'package:gymworkout/Screen/splash_screen/splash_screen_view.dart';
 import 'package:gymworkout/Screen/update_profile_screen/update_profile_screen_view.dart';
 import 'package:gymworkout/Screen/weight_screen/weight_screen_view.dart';
 import '../Screen/calculator_screen/calculator_screen_view.dart';
@@ -32,6 +33,7 @@ class AppRoutes {
   static String excerciseScreen = '/excercise_Screen';
   static String excerciseDetailScreen = '/excerciseDetail_Screen';
   static String resultScreen = '/result_Screen';
+  static String splashScreen = '/splash_Screen';
 
   static List<GetPage> pages = [
     GetPage(
@@ -108,6 +110,11 @@ class AppRoutes {
       name: resultScreen,
       page: () => const ResultScreenWidget(),
       bindings: [ResultScreenBinding()],
+    ),
+    GetPage(
+      name: splashScreen,
+      page: () => const SplashScreenWidget(),
+      bindings: [SplashScreenBinding()],
     ),
   ];
 }

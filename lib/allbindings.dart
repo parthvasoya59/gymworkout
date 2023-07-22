@@ -13,6 +13,7 @@ import 'Screen/home_screen/home_screen_logic.dart';
 import 'Screen/loading_screen/loading_screen_logic.dart';
 import 'Screen/profile_screen/profile_screen_logic.dart';
 import 'Screen/result_screen/result_screen_logic.dart';
+import 'Screen/splash_screen/splash_screen_logic.dart';
 import 'Screen/update_profile_screen/update_profile_screen_logic.dart';
 import 'Screen/weight_screen/weight_screen_logic.dart';
 
@@ -121,5 +122,12 @@ class ResultScreenBinding extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut(() => ResultScreenLogic());
+  }
+}
+
+class SplashScreenBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut(() => SplashScreenLogic());
   }
 }
